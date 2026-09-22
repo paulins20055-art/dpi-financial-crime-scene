@@ -1,0 +1,13 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/review",
+      "destination": "/review.html"
+    },
+    {
+      "source": "/review/",
+      "destination": "/review.html"
+    }
+  ]
+}
