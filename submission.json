@@ -561,8 +561,8 @@
       "id": "D041",
       "category": "classification",
       "reviewTier": "material_judgment",
-      "question": "Classify September customer deposits.",
-      "answer": "Classify the EUR 90,000 September receipts as contract liabilities, not August revenue.",
+      "question": "How should we record the EUR 90,000 received for September events?",
+      "answer": "Keep the EUR 90,000 as customer deposits. The events happen in September, so it is not August revenue.",
       "evidence": [
         "04 Contracts Returns and Angry Customers.pdf",
         "02 Bank Export August.csv"
@@ -570,7 +570,7 @@
       "confidence": "high",
       "aiProposal": "Classify the EUR 90,000 September receipts as contract liabilities, not August revenue.",
       "independentChallenge": "An independent review checked the treatment against the strongest bank, contract, third-party and roll-forward evidence and found no stronger supported alternative.",
-      "studentReasoning": "The events happen in September, so the EUR 90,000 is not August revenue. The correction reduces profit by EUR 90,000 and creates a EUR 90,000 contract liability. Cash does not change because it was already received.",
+      "studentReasoning": "The company received the cash in August, but it had not completed the events yet. Therefore cash stays the same, August profit falls by EUR 90,000, and liabilities rise by EUR 90,000.",
       "statementEffect": {
         "profit": -90000,
         "cash": 0,
@@ -584,8 +584,8 @@
       "id": "D042",
       "category": "classification",
       "reviewTier": "material_judgment",
-      "question": "Classify New bank borrowing.",
-      "answer": "Classify the EUR 50,000 bank advance as loan principal and financing cash flow, not income.",
+      "question": "How should we record the EUR 50,000 received from the bank?",
+      "answer": "Record the EUR 50,000 as a bank loan, not as income.",
       "evidence": [
         "09 Loans Owner Card and Legal Problems.pdf",
         "02 Bank Export August.csv"
@@ -593,7 +593,7 @@
       "confidence": "high",
       "aiProposal": "Classify the EUR 50,000 bank advance as loan principal and financing cash flow, not income.",
       "independentChallenge": "An independent review checked the treatment against the strongest bank, contract, third-party and roll-forward evidence and found no stronger supported alternative.",
-      "studentReasoning": "The signed agreement requires repayment, so the EUR 50,000 is a loan, not income. The correction reduces profit by EUR 50,000 and increases loan liabilities by EUR 50,000. Cash does not change from the reclassification.",
+      "studentReasoning": "The money must be repaid, so the company did not earn it. Cash and loan debt rise by EUR 50,000, but profit does not rise.",
       "statementEffect": {
         "profit": -50000,
         "cash": 0,
@@ -607,8 +607,8 @@
       "id": "D043",
       "category": "classification",
       "reviewTier": "material_judgment",
-      "question": "Classify Packaging machine.",
-      "answer": "Capitalize the EUR 60,000 packaging machine as PPE from 10 May.",
+      "question": "Is the EUR 60,000 packaging machine an asset or an expense?",
+      "answer": "Record the EUR 60,000 packaging machine as a long-term asset.",
       "evidence": [
         "06 Purchases Invoices and Goods Received.pdf",
         "08 Assets Repairs Leases Maybe.xlsx"
@@ -616,7 +616,7 @@
       "confidence": "high",
       "aiProposal": "Capitalize the EUR 60,000 packaging machine as PPE from 10 May.",
       "independentChallenge": "An independent review checked the treatment against the strongest bank, contract, third-party and roll-forward evidence and found no stronger supported alternative.",
-      "studentReasoning": "The packaging machine will be used for more than one period, so I capitalize EUR 60,000 as PPE. Compared with expensing it, profit and assets are EUR 60,000 higher before depreciation. The payment remains an investing cash outflow.",
+      "studentReasoning": "The machine will help the business for more than one year. Therefore it is an asset, not a full expense on the purchase date. The cash payment is an investing cash outflow.",
       "statementEffect": {
         "profit": 60000,
         "cash": 0,
@@ -630,8 +630,8 @@
       "id": "D044",
       "category": "classification",
       "reviewTier": "material_judgment",
-      "question": "Classify Photo booth.",
-      "answer": "Capitalize the EUR 20,000 photo booth as PPE from 10 May.",
+      "question": "Is the EUR 20,000 photo booth an asset or a marketing expense?",
+      "answer": "Record the EUR 20,000 photo booth as a long-term asset.",
       "evidence": [
         "06 Purchases Invoices and Goods Received.pdf",
         "08 Assets Repairs Leases Maybe.xlsx"
@@ -639,7 +639,7 @@
       "confidence": "high",
       "aiProposal": "Capitalize the EUR 20,000 photo booth as PPE from 10 May.",
       "independentChallenge": "An independent review checked the treatment against the strongest bank, contract, third-party and roll-forward evidence and found no stronger supported alternative.",
-      "studentReasoning": "The photo booth is a long-term operating asset, so I capitalize EUR 20,000 as PPE. Compared with marketing expense, profit and assets are EUR 20,000 higher before depreciation. Cash is unchanged by the classification.",
+      "studentReasoning": "The business will use the photo booth for more than one period. Therefore it is an asset, not a marketing expense. Cash does not change from this reclassification.",
       "statementEffect": {
         "profit": 20000,
         "cash": 0,
@@ -653,8 +653,8 @@
       "id": "D045",
       "category": "classification",
       "reviewTier": "material_judgment",
-      "question": "Classify Machine belt and calibration.",
-      "answer": "Expense the EUR 10,000 belt replacement, cleaning and calibration because it only restores normal output.",
+      "question": "Is the EUR 10,000 machine work a repair or an improvement?",
+      "answer": "Record the EUR 10,000 as a repair expense because it only returned the machine to normal condition.",
       "evidence": [
         "06 Purchases Invoices and Goods Received.pdf",
         "08 Assets Repairs Leases Maybe.xlsx"
@@ -662,7 +662,7 @@
       "confidence": "high",
       "aiProposal": "Expense the EUR 10,000 belt replacement, cleaning and calibration because it only restores normal output.",
       "independentChallenge": "An independent review checked the treatment against the strongest bank, contract, third-party and roll-forward evidence and found no stronger supported alternative.",
-      "studentReasoning": "The EUR 10,000 work only restored normal output and did not add capacity or useful life. I expense it as a repair. Compared with capitalization, profit and assets are EUR 10,000 lower; cash is unchanged by the classification.",
+      "studentReasoning": "The work did not add extra capacity or extend the machine’s life. Therefore it is a repair expense. Profit and assets are EUR 10,000 lower than if it were recorded as an asset.",
       "statementEffect": {
         "profit": -10000,
         "cash": 0,
@@ -676,8 +676,8 @@
       "id": "D046",
       "category": "classification",
       "reviewTier": "material_judgment",
-      "question": "Classify Owner villa deposit.",
-      "answer": "Classify the EUR 70,000 personal villa payment as an owner distribution.",
+      "question": "How should we record the EUR 70,000 villa payment?",
+      "answer": "Record the EUR 70,000 personal villa payment as money taken by the owner.",
       "evidence": [
         "09 Loans Owner Card and Legal Problems.pdf",
         "10 Email and WhatsApp Dump DO NOT FORWARD.pdf"
@@ -685,7 +685,7 @@
       "confidence": "high",
       "aiProposal": "Classify the EUR 70,000 personal villa payment as an owner distribution.",
       "independentChallenge": "An independent review checked the treatment against the strongest bank, contract, third-party and roll-forward evidence and found no stronger supported alternative.",
-      "studentReasoning": "The villa is personal and no customer meeting occurred, so EUR 70,000 is an owner distribution. The transaction reduces cash and equity by EUR 70,000 but does not reduce profit. Reclassifying it from expense raises profit by EUR 70,000 and records an equal distribution.",
+      "studentReasoning": "The villa is personal and there is no proof of a business meeting. It reduces cash and owner’s equity, but it is not a business expense and does not reduce profit.",
       "statementEffect": {
         "profit": 70000,
         "cash": 0,
@@ -699,8 +699,8 @@
       "id": "D047",
       "category": "classification",
       "reviewTier": "material_judgment",
-      "question": "Classify Owner card spending.",
-      "answer": "Classify the EUR 40,000 unsupported owner-card spend as an owner distribution.",
+      "question": "How should we record the EUR 40,000 owner-card spending?",
+      "answer": "Record the EUR 40,000 as money taken by the owner because there is no proof of a business purpose.",
       "evidence": [
         "09 Loans Owner Card and Legal Problems.pdf",
         "02 Bank Export August.csv"
@@ -708,7 +708,7 @@
       "confidence": "high",
       "aiProposal": "Classify the EUR 40,000 unsupported owner-card spend as an owner distribution.",
       "independentChallenge": "An independent review checked the treatment against the strongest bank, contract, third-party and roll-forward evidence and found no stronger supported alternative.",
-      "studentReasoning": "There is no supported business purpose for the EUR 40,000 owner-card spending, so it is an owner distribution. It reduces cash and equity by EUR 40,000, not profit.",
+      "studentReasoning": "No documents show that this spending was for the business. It reduces cash and owner’s equity, but it does not reduce profit.",
       "statementEffect": {
         "profit": 40000,
         "cash": 0,
@@ -722,15 +722,15 @@
       "id": "D048",
       "category": "classification",
       "reviewTier": "material_judgment",
-      "question": "Classify Physical product materials consumed.",
-      "answer": "Classify EUR 405,000 of physical product materials consumed as cost of goods sold.",
+      "question": "How should we record the EUR 405,000 of materials used for sold products?",
+      "answer": "Record the EUR 405,000 as cost of goods sold.",
       "evidence": [
         "05 Warehouse Count Marta Notes.pdf"
       ],
       "confidence": "high",
       "aiProposal": "Classify EUR 405,000 of physical product materials consumed as cost of goods sold.",
       "independentChallenge": "An independent review checked the treatment against the strongest bank, contract, third-party and roll-forward evidence and found no stronger supported alternative.",
-      "studentReasoning": "The EUR 405,000 materials were consumed on delivered sales, so they are COGS. Consumption reduces inventory, profit and equity by EUR 405,000. Cash is recorded separately when suppliers are paid.",
+      "studentReasoning": "These materials were used to make products that were sold. Therefore they reduce inventory and profit by EUR 405,000. Cash is recorded separately when suppliers are paid.",
       "statementEffect": {
         "profit": null,
         "cash": 0,
@@ -744,15 +744,15 @@
       "id": "D049",
       "category": "classification",
       "reviewTier": "material_judgment",
-      "question": "Classify Event staff payroll.",
-      "answer": "Classify EUR 80,000 event-delivery staff payroll as direct service cost within COGS.",
+      "question": "How should we record the EUR 80,000 payroll for event staff?",
+      "answer": "Record the EUR 80,000 as a direct cost of providing customer events.",
       "evidence": [
         "07 Payroll Bonuses Contractors NEW.xlsx"
       ],
       "confidence": "high",
       "aiProposal": "Classify EUR 80,000 event-delivery staff payroll as direct service cost within COGS.",
       "independentChallenge": "An independent review checked the treatment against the strongest bank, contract, third-party and roll-forward evidence and found no stronger supported alternative.",
-      "studentReasoning": "Event-delivery employees work directly on customer events, so EUR 80,000 belongs in direct service COGS. Moving it from administration lowers gross profit but does not change total profit, cash or the balance sheet.",
+      "studentReasoning": "These employees worked directly on customer events, so their pay belongs in direct service costs. This changes gross profit, but not total profit, cash or the balance sheet.",
       "statementEffect": {
         "profit": 0,
         "cash": 0,
@@ -832,15 +832,15 @@
       "id": "D056",
       "category": "classification",
       "reviewTier": "material_judgment",
-      "question": "Classify Depreciation.",
-      "answer": "Recognize EUR 24,000 depreciation expense; it is non-cash and increases accumulated depreciation.",
+      "question": "How should we record EUR 24,000 depreciation?",
+      "answer": "Record EUR 24,000 depreciation expense and reduce the value of the equipment.",
       "evidence": [
         "08 Assets Repairs Leases Maybe.xlsx"
       ],
       "confidence": "high",
       "aiProposal": "Recognize EUR 24,000 depreciation expense; it is non-cash and increases accumulated depreciation.",
       "independentChallenge": "An independent review checked the treatment against the strongest bank, contract, third-party and roll-forward evidence and found no stronger supported alternative.",
-      "studentReasoning": "Depreciation allocates asset cost to this period. Recording EUR 24,000 reduces profit, PPE and equity by EUR 24,000, but it does not use current-period cash.",
+      "studentReasoning": "Depreciation spreads the cost of equipment over the years it is used. It reduces profit, assets and equity by EUR 24,000, but no cash is paid now.",
       "statementEffect": {
         "profit": -24000,
         "cash": 0,
@@ -854,8 +854,8 @@
       "id": "D057",
       "category": "classification",
       "reviewTier": "material_judgment",
-      "question": "Classify Bad receivable.",
-      "answer": "Recognize EUR 18,000 bad-debt expense and reduce receivables.",
+      "question": "What should we do with the EUR 18,000 that the customer will not pay?",
+      "answer": "Record an EUR 18,000 bad-debt expense and reduce receivables.",
       "evidence": [
         "04 Contracts Returns and Angry Customers.pdf",
         "11 Evidence Received After Takeover.pdf"
@@ -863,7 +863,7 @@
       "confidence": "high",
       "aiProposal": "Recognize EUR 18,000 bad-debt expense and reduce receivables.",
       "independentChallenge": "An independent review checked the treatment against the strongest bank, contract, third-party and roll-forward evidence and found no stronger supported alternative.",
-      "studentReasoning": "The liquidator confirmed that EUR 18,000 will not be recovered and that the problem existed at 31 August. I recognize bad-debt expense, reducing profit, receivables and equity by EUR 18,000. Cash does not change now.",
+      "studentReasoning": "The liquidator confirmed that the money will not be recovered. Therefore profit, receivables and equity fall by EUR 18,000. Cash does not change now.",
       "statementEffect": {
         "profit": -18000,
         "cash": 0,
@@ -877,8 +877,8 @@
       "id": "D058",
       "category": "classification",
       "reviewTier": "material_judgment",
-      "question": "Classify Damaged stock.",
-      "answer": "Recognize an EUR 22,000 inventory write-off for unsaleable damaged stock.",
+      "question": "What should we do with EUR 22,000 of damaged stock?",
+      "answer": "Write off the EUR 22,000 because the damaged stock cannot be sold.",
       "evidence": [
         "05 Warehouse Count Marta Notes.pdf",
         "11 Evidence Received After Takeover.pdf"
@@ -886,7 +886,7 @@
       "confidence": "high",
       "aiProposal": "Recognize an EUR 22,000 inventory write-off for unsaleable damaged stock.",
       "independentChallenge": "An independent review checked the treatment against the strongest bank, contract, third-party and roll-forward evidence and found no stronger supported alternative.",
-      "studentReasoning": "The damaged stock cannot be sold, so its EUR 22,000 carrying value must be written off. Profit, inventory and equity fall by EUR 22,000. The write-off itself has no cash effect.",
+      "studentReasoning": "The stock has no sale value. Therefore profit, inventory and equity fall by EUR 22,000. The write-off itself does not change cash.",
       "statementEffect": {
         "profit": -22000,
         "cash": 0,
@@ -900,8 +900,8 @@
       "id": "D059",
       "category": "classification",
       "reviewTier": "material_judgment",
-      "question": "Classify Probable legal claim.",
-      "answer": "Recognize an EUR 25,000 legal expense and provision for the probable former-employee claim.",
+      "question": "How should we record the likely former-employee legal claim?",
+      "answer": "Record a EUR 25,000 legal expense and a EUR 25,000 liability.",
       "evidence": [
         "09 Loans Owner Card and Legal Problems.pdf",
         "11 Evidence Received After Takeover.pdf"
@@ -909,7 +909,7 @@
       "confidence": "high",
       "aiProposal": "Recognize an EUR 25,000 legal expense and provision for the probable former-employee claim.",
       "independentChallenge": "An independent review checked the treatment against the strongest bank, contract, third-party and roll-forward evidence and found no stronger supported alternative.",
-      "studentReasoning": "External counsel says the employee claim is probable and estimates EUR 25,000. I recognize an expense and provision: profit and equity fall by EUR 25,000, liabilities rise by EUR 25,000, and cash stays unchanged until payment.",
+      "studentReasoning": "The external lawyer says the claim is likely and estimates EUR 25,000. Profit and equity fall, liabilities rise, and cash stays the same until the claim is paid.",
       "statementEffect": {
         "profit": -25000,
         "cash": 0,
@@ -969,8 +969,8 @@
       "id": "D064",
       "category": "classification",
       "reviewTier": "material_judgment",
-      "question": "Classify Delivered NorthStar contract.",
-      "answer": "Recognize EUR 180,000 NorthStar revenue because delivery was accepted by 12 February.",
+      "question": "Should we record the EUR 180,000 NorthStar contract as revenue?",
+      "answer": "Yes. Record EUR 180,000 revenue because NorthStar accepted the delivery.",
       "evidence": [
         "04 Contracts Returns and Angry Customers.pdf",
         "03 CRM Export Cleaned FINAL.xlsx"
@@ -978,7 +978,7 @@
       "confidence": "high",
       "aiProposal": "Recognize EUR 180,000 NorthStar revenue because delivery was accepted by 12 February.",
       "independentChallenge": "An independent review checked the treatment against the strongest bank, contract, third-party and roll-forward evidence and found no stronger supported alternative.",
-      "studentReasoning": "NorthStar accepted delivery by 12 February, so EUR 180,000 revenue is recognized in the period. The receipt settles the related receivable; it is not extra revenue.",
+      "studentReasoning": "The work was completed and accepted, so the company earned the revenue. The cash receipt pays the related receivable; it is not extra revenue.",
       "statementEffect": {
         "profit": 0,
         "cash": 0,
@@ -992,8 +992,8 @@
       "id": "D065",
       "category": "classification",
       "reviewTier": "material_judgment",
-      "question": "Classify Delivered Freedom contract.",
-      "answer": "Recognize EUR 200,000 Freedom Festivals revenue because delivery was accepted by 18 March.",
+      "question": "Should we record the EUR 200,000 Freedom contract as revenue?",
+      "answer": "Yes. Record EUR 200,000 revenue because Freedom accepted the delivery.",
       "evidence": [
         "04 Contracts Returns and Angry Customers.pdf",
         "03 CRM Export Cleaned FINAL.xlsx"
@@ -1001,7 +1001,7 @@
       "confidence": "high",
       "aiProposal": "Recognize EUR 200,000 Freedom Festivals revenue because delivery was accepted by 18 March.",
       "independentChallenge": "An independent review checked the treatment against the strongest bank, contract, third-party and roll-forward evidence and found no stronger supported alternative.",
-      "studentReasoning": "Freedom accepted delivery by 18 March, so I recognize EUR 200,000 revenue. EUR 142,000 was collected and EUR 58,000 remains receivable.",
+      "studentReasoning": "The work was completed and accepted. EUR 142,000 was received, and EUR 58,000 is still owed by the customer.",
       "statementEffect": {
         "profit": 0,
         "cash": 0,
@@ -1015,8 +1015,8 @@
       "id": "D066",
       "category": "classification",
       "reviewTier": "material_judgment",
-      "question": "Classify Completed Phoenix event.",
-      "answer": "Recognize EUR 100,000 Phoenix event revenue because the event was completed and accepted on 29 April.",
+      "question": "Should we record the EUR 100,000 Phoenix event as revenue?",
+      "answer": "Yes. Record EUR 100,000 revenue because the Phoenix event was completed and accepted.",
       "evidence": [
         "04 Contracts Returns and Angry Customers.pdf",
         "03 CRM Export Cleaned FINAL.xlsx"
@@ -1024,7 +1024,7 @@
       "confidence": "high",
       "aiProposal": "Recognize EUR 100,000 Phoenix event revenue because the event was completed and accepted on 29 April.",
       "independentChallenge": "An independent review checked the treatment against the strongest bank, contract, third-party and roll-forward evidence and found no stronger supported alternative.",
-      "studentReasoning": "The Phoenix event was completed and accepted on 29 April, so I recognize EUR 100,000 revenue. EUR 70,000 was collected and EUR 30,000 remains receivable.",
+      "studentReasoning": "The company completed the event, so it earned the revenue. EUR 70,000 was received, and EUR 30,000 is still owed.",
       "statementEffect": {
         "profit": 0,
         "cash": 0,
@@ -1038,8 +1038,8 @@
       "id": "D067",
       "category": "classification",
       "reviewTier": "material_judgment",
-      "question": "Classify Delivered Liberty order.",
-      "answer": "Recognize EUR 120,000 Liberty revenue because the mixed order was delivered and accepted on 20 June.",
+      "question": "Should we record the EUR 120,000 Liberty order as revenue?",
+      "answer": "Yes. Record EUR 120,000 revenue because Liberty accepted the delivered order.",
       "evidence": [
         "04 Contracts Returns and Angry Customers.pdf",
         "03 CRM Export Cleaned FINAL.xlsx"
@@ -1047,7 +1047,7 @@
       "confidence": "high",
       "aiProposal": "Recognize EUR 120,000 Liberty revenue because the mixed order was delivered and accepted on 20 June.",
       "independentChallenge": "An independent review checked the treatment against the strongest bank, contract, third-party and roll-forward evidence and found no stronger supported alternative.",
-      "studentReasoning": "Liberty accepted the delivered order on 20 June, so I recognize EUR 120,000 revenue. EUR 95,000 was collected and EUR 25,000 remains receivable.",
+      "studentReasoning": "The order was delivered and accepted. EUR 95,000 was received, and EUR 25,000 is still owed.",
       "statementEffect": {
         "profit": 0,
         "cash": 0,
@@ -1061,8 +1061,8 @@
       "id": "D068",
       "category": "classification",
       "reviewTier": "material_judgment",
-      "question": "Classify Undelivered September events.",
-      "answer": "Defer EUR 90,000 of undelivered September events as contract liabilities.",
+      "question": "Should the EUR 90,000 for September events be August revenue?",
+      "answer": "No. Keep the EUR 90,000 as customer deposits because the events were not completed by 31 August.",
       "evidence": [
         "04 Contracts Returns and Angry Customers.pdf",
         "03 CRM Export Cleaned FINAL.xlsx"
@@ -1070,7 +1070,7 @@
       "confidence": "high",
       "aiProposal": "Defer EUR 90,000 of undelivered September events as contract liabilities.",
       "independentChallenge": "An independent review checked the treatment against the strongest bank, contract, third-party and roll-forward evidence and found no stronger supported alternative.",
-      "studentReasoning": "The two September events were not delivered by 31 August. Therefore EUR 90,000 remains a contract liability, not revenue. Cash is already received, but August profit is EUR 90,000 lower than management reported.",
+      "studentReasoning": "The company received the cash but had not yet provided the service. Therefore August profit is EUR 90,000 lower and liabilities are EUR 90,000 higher.",
       "statementEffect": {
         "profit": -90000,
         "cash": 0,
@@ -1108,8 +1108,8 @@
       "id": "D071",
       "category": "estimation",
       "reviewTier": "material_judgment",
-      "question": "Estimate Closing bad-debt allowance/write-off and document the basis.",
-      "answer": "Estimate the closing bad-debt allowance/write-off at EUR 18,000 based on the liquidator's notice of no recovery.",
+      "question": "How much bad debt should we record?",
+      "answer": "Record EUR 18,000 bad debt because the liquidator says none of it will be recovered.",
       "evidence": [
         "04 Contracts Returns and Angry Customers.pdf",
         "11 Evidence Received After Takeover.pdf"
@@ -1117,7 +1117,7 @@
       "confidence": "high",
       "aiProposal": "Estimate the closing bad-debt allowance/write-off at EUR 18,000 based on the liquidator's notice of no recovery.",
       "independentChallenge": "An independent review checked the treatment against the strongest bank, contract, third-party and roll-forward evidence and found no stronger supported alternative.",
-      "studentReasoning": "The liquidator expects no recovery, so the best estimate of the bad-debt loss is the full EUR 18,000. Profit, net receivables and equity decrease by EUR 18,000; cash is unchanged.",
+      "studentReasoning": "The best estimate is the full EUR 18,000 owed by the customer. Profit, receivables and equity fall by EUR 18,000, while cash stays the same.",
       "statementEffect": {
         "profit": -18000,
         "cash": 0,
@@ -1131,8 +1131,8 @@
       "id": "D072",
       "category": "estimation",
       "reviewTier": "material_judgment",
-      "question": "Estimate Damaged inventory write-off and document the basis.",
-      "answer": "Estimate the damaged-inventory write-off at EUR 22,000 because the stock has no saleable value.",
+      "question": "How much damaged stock should we write off?",
+      "answer": "Write off EUR 22,000 because the damaged stock has no sale value.",
       "evidence": [
         "05 Warehouse Count Marta Notes.pdf",
         "11 Evidence Received After Takeover.pdf"
@@ -1140,7 +1140,7 @@
       "confidence": "high",
       "aiProposal": "Estimate the damaged-inventory write-off at EUR 22,000 because the stock has no saleable value.",
       "independentChallenge": "An independent review checked the treatment against the strongest bank, contract, third-party and roll-forward evidence and found no stronger supported alternative.",
-      "studentReasoning": "The damaged stock has no saleable value, so I write off its full EUR 22,000 carrying amount. Profit, inventory and equity decrease by EUR 22,000; cash is unchanged.",
+      "studentReasoning": "The damaged stock cannot be sold, so its full EUR 22,000 value must be removed. Profit, inventory and equity fall, but cash does not change.",
       "statementEffect": {
         "profit": -22000,
         "cash": 0,
@@ -1154,8 +1154,8 @@
       "id": "D073",
       "category": "estimation",
       "reviewTier": "material_judgment",
-      "question": "Estimate Legal provision and document the basis.",
-      "answer": "Estimate the legal provision at EUR 25,000, the external counsel's best estimate; disclose the EUR 20,000-EUR 30,000 range.",
+      "question": "How much should we record for the legal claim?",
+      "answer": "Record EUR 25,000, the lawyer’s best estimate, and disclose the EUR 20,000–30,000 possible range.",
       "evidence": [
         "09 Loans Owner Card and Legal Problems.pdf",
         "11 Evidence Received After Takeover.pdf"
@@ -1163,7 +1163,7 @@
       "confidence": "high",
       "aiProposal": "Estimate the legal provision at EUR 25,000, the external counsel's best estimate; disclose the EUR 20,000-EUR 30,000 range.",
       "independentChallenge": "An independent review checked the treatment against the strongest bank, contract, third-party and roll-forward evidence and found no stronger supported alternative.",
-      "studentReasoning": "The claim is probable and external counsel's best estimate is EUR 25,000, within a EUR 20,000-EUR 30,000 range. I use EUR 25,000, reducing profit and equity and increasing liabilities by that amount.",
+      "studentReasoning": "The claim is likely, and the lawyer’s best estimate is EUR 25,000. Profit and equity fall by EUR 25,000 and liabilities rise by EUR 25,000.",
       "statementEffect": {
         "profit": -25000,
         "cash": 0,
@@ -1177,15 +1177,15 @@
       "id": "D074",
       "category": "estimation",
       "reviewTier": "material_judgment",
-      "question": "Estimate Period depreciation and document the basis.",
-      "answer": "Estimate period depreciation at EUR 24,000 from the independent asset schedule.",
+      "question": "How much depreciation should we record for the period?",
+      "answer": "Record EUR 24,000 depreciation based on the independent asset schedule.",
       "evidence": [
         "08 Assets Repairs Leases Maybe.xlsx"
       ],
       "confidence": "high",
       "aiProposal": "Estimate period depreciation at EUR 24,000 from the independent asset schedule.",
       "independentChallenge": "An independent review checked the treatment against the strongest bank, contract, third-party and roll-forward evidence and found no stronger supported alternative.",
-      "studentReasoning": "The independent asset schedule supports EUR 24,000 depreciation. It reduces profit, PPE and equity by EUR 24,000, with no current cash effect.",
+      "studentReasoning": "The asset schedule supports EUR 24,000. This lowers profit, equipment value and equity by EUR 24,000, but it does not change cash.",
       "statementEffect": {
         "profit": -24000,
         "cash": 0,
@@ -1199,8 +1199,8 @@
       "id": "D075",
       "category": "estimation",
       "reviewTier": "material_judgment",
-      "question": "Estimate Closing inventory and document the basis.",
-      "answer": "Use EUR 112,000 closing inventory from EUR 80,000 opening inventory + EUR 459,000 purchases - EUR 405,000 consumption - EUR 22,000 write-off. Flag the EUR 9,000 conflict with the physical good-stock count.",
+      "question": "What amount should we use for closing inventory?",
+      "answer": "Use EUR 112,000 from the inventory calculation and clearly disclose the EUR 9,000 difference from the physical count.",
       "evidence": [
         "05 Warehouse Count Marta Notes.pdf",
         "06 Purchases Invoices and Goods Received.pdf"
@@ -1208,7 +1208,7 @@
       "confidence": "medium",
       "aiProposal": "Use the EUR 121,000 physically counted saleable stock as closing inventory.",
       "independentChallenge": "The roll-forward gives EUR 112,000 after consumption and write-off. The EUR 9,000 gap must be disclosed instead of forcing the physical count into the model.",
-      "studentReasoning": "My roll-forward is EUR 80,000 opening inventory plus EUR 459,000 purchases minus EUR 405,000 consumption minus EUR 22,000 write-off, giving EUR 112,000. The physical good-stock count says EUR 121,000, so I disclose the EUR 9,000 difference instead of hiding it.",
+      "studentReasoning": "The calculation is EUR 80,000 opening stock plus EUR 459,000 purchases minus EUR 405,000 used minus EUR 22,000 damaged, giving EUR 112,000. The physical count says EUR 121,000, so I show the EUR 9,000 difference instead of hiding it.",
       "statementEffect": {
         "profit": null,
         "cash": 0,
@@ -1400,8 +1400,8 @@
       "id": "D091",
       "category": "board_decision",
       "reviewTier": "material_judgment",
-      "question": "Approve corrected accounts before valuation",
-      "answer": "Approve only the corrected accounts, with the EUR 9,000 inventory conflict and missing insurance evidence disclosed before valuation.",
+      "question": "Should the corrected accounts be used for the business valuation?",
+      "answer": "Yes, but clearly disclose the EUR 9,000 inventory difference and the missing insurance evidence.",
       "evidence": [
         "00 BOARD ORDER READ FIRST.pdf",
         "01 USE THIS NUMBERS FINAL v9.xlsx",
@@ -1410,7 +1410,7 @@
       "confidence": "medium",
       "aiProposal": "Approve the corrected accounts immediately because the balance sheet balances.",
       "independentChallenge": "A balanced statement can still contain wrong estimates. Approval should be conditional on disclosure of the inventory conflict and missing insurance support.",
-      "studentReasoning": "I approve the corrected accounts for valuation only with the EUR 9,000 inventory difference and missing insurance evidence clearly disclosed. A balanced statement is necessary, but it does not remove estimation uncertainty.",
+      "studentReasoning": "The statements balance, but there are still two important uncertainties. I would use the corrected accounts only if the inventory difference and missing insurance information are clearly shown.",
       "statementEffect": {
         "profit": null,
         "cash": null,
@@ -1522,8 +1522,8 @@
       "id": "D100",
       "category": "board_decision",
       "reviewTier": "material_judgment",
-      "question": "Use claimed management profit for earn-out",
-      "answer": "No. Do not use the unsupported EUR 312,000 management profit for the earn-out; use the corrected EUR 65,000 result subject to disclosed uncertainty.",
+      "question": "Should management’s EUR 312,000 profit be used for the earn-out?",
+      "answer": "No. Use the corrected EUR 65,000 profit, not management’s unsupported EUR 312,000 figure.",
       "evidence": [
         "01 USE THIS NUMBERS FINAL v9.xlsx",
         "02 Bank Export August.csv",
@@ -1533,7 +1533,7 @@
       "confidence": "high",
       "aiProposal": "No. Do not use the unsupported EUR 312,000 management profit for the earn-out; use the corrected EUR 65,000 result subject to disclosed uncertainty.",
       "independentChallenge": "An independent review checked the treatment against the strongest bank, contract, third-party and roll-forward evidence and found no stronger supported alternative.",
-      "studentReasoning": "I reject the EUR 312,000 management profit because it includes unsupported and incorrect treatments. The evidence-supported profit is EUR 65,000, which is EUR 247,000 lower, so the earn-out must not use management's number.",
+      "studentReasoning": "Management’s number includes incorrect and unsupported items. The evidence supports EUR 65,000 profit, which is EUR 247,000 lower, so the earn-out should use the corrected result.",
       "statementEffect": {
         "profit": -247000,
         "cash": 0,
